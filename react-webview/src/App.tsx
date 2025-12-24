@@ -34,6 +34,10 @@ const App = ({ data }: AppProps) => {
         key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
       enableSorting: true,
       enableColumnFilter: true,
+      filterFn: (row, columnId, filterValue) => {
+        const value = row.getValue(columnId);
+        return String(value).toLowerCase().includes(String(filterValue).toLowerCase());
+      },
       size: 160,
       minSize: 20,
       maxSize: 320,
@@ -72,11 +76,6 @@ const App = ({ data }: AppProps) => {
 
   return (
     <div className="table-container">
-      <div className="table-meta">
-        {table.getRowModel().rows.length} rows ·{" "}
-        {table.getAllColumns().length} columns
-      </div>
-
       <div className="table-wrapper">
         <table style={{ width: table.getTotalSize() }}>
           <thead>

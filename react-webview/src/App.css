@@ -1,7 +1,7 @@
 .table-container {
   font-family: var(--vscode-font-family);
-  font-size: 12px;
-  line-height: 1.6; /* 🔑 control row height */
+  font-size: var(--vscode-font-size);
+  line-height: calc(var(--vscode-font-size) + 8px); /* 🔑 control row height */
   color: var(--vscode-foreground);
   background: var(--vscode-editorWidget-background);
 }
@@ -40,7 +40,7 @@ th {
 
   /* compact header */
   padding: 4px 6px;
-  line-height: 1.6;
+  line-height: calc(var(--vscode-font-size) + 8px);
   vertical-align: bottom;
 }
 
@@ -50,7 +50,7 @@ td {
 
   /* compact rows */
   padding: 4px 6px;
-  line-height: 1.6;
+  line-height: calc(var(--vscode-font-size) + 8px);
   white-space: nowrap;
 }
 

@@ -3,7 +3,7 @@
   "displayName": "JSON to Table Displayer",
   "description": "Displays flat JSON data as a table",
   "publisher": "PraneethReddy",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/pERENeeth/JSONTabler"
