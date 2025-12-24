@@ -1,8 +1,8 @@
 {
   "name": "JSONTabler",
-  "displayName": "JSON Table Viewer",
+  "displayName": "JSON to Table Displayer",
   "description": "Displays flat JSON data as a table",
-  "publisher": "Praneeth Reddy",
+  "publisher": "PraneethReddy",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
       {
         "command": "JSONTabler.showJsonAsTable",
         "title": "Show JSON as Table",
-        "category": "JSON Table Viewer"
+        "category": "JSON to Table Displayer"
       }
     ]
   },
@@ -60,6 +60,7 @@
     "eslint": "^9.25.1",
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.3",
+    "vsce": "^2.15.0",
     "webpack": "^5.99.7",
     "webpack-cli": "^6.0.1"
   },
