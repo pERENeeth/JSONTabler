@@ -1,0 +1,113 @@
+.table-container {
+  font-family: var(--vscode-font-family);
+  font-size: 12px;
+  line-height: 1.6; /* 🔑 control row height */
+  color: var(--vscode-foreground);
+  background: var(--vscode-editorWidget-background);
+}
+
+.table-wrapper {
+  overflow: auto;
+  max-height: 80vh;
+  border: 1px solid var(--vscode-editorWidget-border);
+  background: var(--vscode-editorWidget-background);
+}
+
+td {
+  max-width: 320px;      /* match maxSize */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--vscode-editorWidget-background);
+}
+
+th {
+  background: var(--vscode-editorWidget-background);
+  color: var(--vscode-foreground);
+  border-bottom: 1px solid var(--vscode-editorWidget-border);
+
+  /* compact header */
+  padding: 4px 6px;
+  line-height: 1.6;
+  vertical-align: bottom;
+}
+
+td {
+  color: var(--vscode-foreground);
+  border-bottom: 1px solid var(--vscode-editorWidget-border);
+
+  /* compact rows */
+  padding: 4px 6px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+  background: var(--vscode-list-inactiveSelectionBackground);
+}
+
+tr:hover {
+  background: var(--vscode-list-hoverBackground);
+}
+
+.table-meta {
+  color: var(--vscode-descriptionForeground);
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.column-filter {
+  background: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  border: 1px solid var(--vscode-input-border);
+
+  /* compact filter input */
+  margin-top: 2px;
+  padding: 1px 4px;
+  height: 18px;
+  font-size: 11px;
+  line-height: 16px;
+  box-sizing: border-box;
+}
+
+.cell-null {
+  color: var(--vscode-descriptionForeground);
+  font-style: italic;
+}
+
+/* Column resizer */
+.resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  cursor: col-resize;
+  user-select: none;
+  touch-action: none;
+}
+
+.resizer:hover {
+  background: var(--vscode-focusBorder);
+}
+
+.isResizing {
+  background: var(--vscode-focusBorder);
+}
+
+.no-data {
+  padding: 16px;
+  color: var(--vscode-descriptionForeground);
+}

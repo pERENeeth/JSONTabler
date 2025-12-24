@@ -1,0 +1,70 @@
+{
+  "name": "JSONTabler",
+  "displayName": "JSON Table Viewer",
+  "description": "Displays flat JSON data as a table",
+  "publisher": "Praneeth Reddy",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pERENeeth/JSONTabler"
+  },
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Praneeth Reddy",
+    "url": "https://github.com/pERENeeth"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "assets/logo.png",
+  "keywords": [
+    "json",
+    "table",
+    "viewer",
+    "interactive",
+    "data"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "JSONTabler.showJsonAsTable",
+        "title": "Show JSON as Table",
+        "category": "JSON Table Viewer"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.100.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1"
+  }
+}
