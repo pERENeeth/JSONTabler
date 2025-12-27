@@ -26,7 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 		const panel = vscode.window.createWebviewPanel(
 			"JSONTabler",
-			"JSON to Table Displayer",
+			"JSON to Table View",
 			vscode.ViewColumn.Beside,
 			{ enableScripts: true }
 		);

@@ -1,31 +1,45 @@
-<div align='center'>
-    <img src='./assets/logo.png' alt='logo' width='75'>
+<div align="center">
+  <img src="./assets/logo.png" alt="JSONTabler logo" width="75"/>
 
-# JSONTabler 
+# JSONTabler - JSON to Table View
+
 </div>
 
-**JSONTabler** makes flat JSON data as an spreadsheet like table 
-directly inside visual studio code. 
+**JSONTabler - JSON to Table View** transforms flat JSON files into a clean, spreadsheet-like table rendered directly inside **Visual Studio Code**.
 
-## Features 
-- Column Filtering 
-- Column Sorting 
-- Column Resizing 
-- UI of the table matches the corresponding Visual Studio 
-Code editor theme
+View, explore, and analyze your JSON data without leaving the editor.
 
-## Getting Started 
-1. Open any JSON file (.json)
-2. Run the command `Ctrl + Shift + P` and select `Show JSON as Table`
-3. A new editor sub-window with table format data opens in editor window 
 
-## Working Example 
+## Features
 
-### Menu Command 
-![Screenshot](./assets/menu.png)
+* **Column Filtering** — quickly narrow down data
+* **Column Sorting** — sort rows with a click
+* **Column Resizing** — adjust columns to fit your data
+* **Hover Preview** — view full cell content without resizing columns
+* **Theme-Aware UI** — seamlessly matches your current VS Code theme
 
-### Table 
-![Screenshot](./assets/dark.png)
 
-### Changing Theme 
-![Screenshot](./assets/light.png)
+## 🚀 Getting Started
+
+1. Open any JSON file (`.json`)
+2. Press `Ctrl + Shift + P`
+3. Select **Show JSON as Table**
+4. A new editor pane opens displaying your data in a table format
+
+That’s it.
+
+---
+
+## 📸 Working Example
+
+### Command Palette
+
+![Menu Command](./assets/menu.png)
+
+### Table View (Dark Theme)
+
+![Table Dark](./assets/dark.png)
+
+### Table View (Light Theme)
+
+![Table Light](./assets/light.png)
